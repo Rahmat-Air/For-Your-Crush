@@ -2,7 +2,7 @@
 
 ### Detail:
 1. Bahasa pemrograman: Javascript
-2. Software :Visual Studio
+2. Software: Visual Studio
 
 ### Referensi:
 - https://github.com/andikasujanadi/andikasujanadi.github.io
