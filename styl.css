@@ -1,0 +1,314 @@
+body{
+    overflow: hidden;
+    background: black;
+    width: 100%;
+    height: 100vh;
+}
+.bg{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+.ubuntu{
+    background: linear-gradient(to left,#8942A8,#BA382F);
+    opacity: 0;
+}
+.dawn{
+    background: linear-gradient(0deg, rgba(133,26,0,1) 3%, rgba(255,51,0,1) 19%, rgba(181,103,47,1) 45%, rgba(52,142,200,1) 100%);
+    opacity: 0;
+}
+.morning{
+    background: linear-gradient(0deg, rgba(255,230,113,1) 0%, rgba(82,167,255,1) 100%);
+    opacity: 0;
+}
+.noon{
+    background: linear-gradient(0deg, rgba(22,183,255,1) 0%, rgba(14,116,223,1) 58%, rgba(1,7,170,1) 100%);
+    opacity: 0;
+}
+.afternoon{
+    background: linear-gradient(0deg, rgba(161,133,255,1) 0%, rgba(0,118,226,1) 61%, rgba(1,81,170,1) 100%);
+    opacity: 0;
+}
+.sunset{
+    background: linear-gradient(0deg, rgba(195,75,42,1) 0%, rgba(129,29,121,1) 8%, rgba(89,1,170,1) 29%, rgba(1,5,79,1) 90%);
+    opacity: 0;
+}
+.evening{
+    background: linear-gradient(0deg, rgba(0,7,128,1) 0%, rgba(0,3,54,1) 100%);
+    opacity: 0;
+}
+.midnight{
+    background: linear-gradient(0deg, rgba(0,3,60,1) 0%, rgba(0,0,0,1) 100%);
+    opacity: 0;
+}
+.red{
+    background: linear-gradient(90deg, rgba(255,0,255,1) 0%, rgba(255,0,0,1) 50%, rgba(255,255,0,1) 100%);
+    opacity: 0;
+}
+.green{
+    background: linear-gradient(90deg, rgba(255,255,0,1) 0%, rgba(0,255,0,1) 50%, rgba(0,255,255,1) 100%);
+    opacity: 0;
+}
+.blue{
+    background: linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(0,0,255,1) 50%, rgba(255,0,255,1) 100%);
+    opacity: 0;
+}
+.custom{
+    background-color: #0079FF;
+    opacity: 0;
+}
+.jam,.ucapan,.quotes{
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    color: #fff;
+    transition: all 5s ease, color 1s ease;
+}
+.jam{
+    opacity: 0;
+    font-size: 100pt;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%,calc(50% - 0px));
+}
+.ucapan{
+    font-size: 25pt;
+    left: 50%;
+    bottom: 50%;
+    text-align: center;
+    transform: translate(-50%,calc(50% + 100px));
+}
+.quotes{
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0%);
+    text-align: center;
+    font-size: 15pt;
+    text-shadow: 0px 0px 10px #000;
+    z-index: 2;
+}
+.kontrol{
+    margin: 20px;
+    background: #fff;
+    padding: 20px;
+    position: absolute;
+    width: 200px;
+    border-radius: 10px;
+    left: -220px;
+    transition: all 1 ease;
+    z-index: 99;
+}
+.panah{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: calc(50% - 5px);
+    right: -30px;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-bottom: none;
+    border-left: none;
+    border-radius: 2px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    transform: rotate(45deg);
+    z-index: 50;
+}
+#color-picker{
+    width: 100%;
+}
+.note{
+    color: white;
+    transition: all 2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20pt;
+    text-align: center;
+    width: 100vh;
+}
+.kotak{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    box-shadow: 50px 50px 150px rgba(249, 209, 209,.5);
+}
+.kotak :before{
+    content: '';
+    position: absolute;
+    top:-75px;
+    background: #e80909;
+    width: 150px;
+    height: 75px;
+    border-top-right-radius: 150px;
+    border-top-left-radius: 150px;
+}
+.kotak :after{
+    content: '';
+    position: absolute;
+    left:-75px;
+    background: #e80909;
+    width: 75px;
+    height: 150px;
+    border-bottom-left-radius: 150px;
+    border-top-left-radius: 150px;
+}
+.kotak li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background-color: #e80909;
+    animation: animate 20s linear infinite; 
+    bottom: -150px;
+    transition: all 1s ease;
+
+}
+.kotak li:nth-child(1){
+    left: 86%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+.kotak li:nth-child(2){
+    left: 12%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+.kotak li:nth-child(3){
+    left: 70%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 5.5s;
+}
+.kotak li:nth-child(4){
+    left: 42%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s; 
+}
+.kotak li:nth-child(5){
+    left: 15%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 3.5s;
+}
+.bulat{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    left:50%;
+    bottom: 50%;
+    transform: translate(-50%,50%) scale(0);
+    transition: 3s all ease;
+}
+.bulat span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate2 6s linear infinite;
+}
+.bulat span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate3 4s linear infinite;
+}
+.bulat span:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate2 10s linear infinite;
+}
+.pengembang{
+    position: absolute;
+    font-size: 10px;
+    color: #FFFFFF;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.3;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+@keyframes animate2{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+@keyframes animate3{
+    0%{
+        transform:rotate(360deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+}
+@media only screen and (max-width: 900px), screen and (max-height: 700px) {
+    .jam,.ucapan{
+        transition: all 1s ease;
+    }
+  .jam{
+        font-size: 50pt;
+        transform: translate(-50%,calc(50% - 0px));
+    }
+    .ucapan{
+        font-size: 15pt;
+        transform: translate(-50%,calc(50% + 50px));
+    }
+    .quotes,.note{
+        font-size: 15pt;
+    }
+    .bulat{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .ucapan{
+        font-size: 10pt;
+    }
+    .quotes{
+        font-size: 7pt;
+    }
+    .note{
+        font-size: 10pt;
+    }
+}

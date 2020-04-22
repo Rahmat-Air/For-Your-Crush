@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title>Hi Crush♥ </title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	  <link rel="shortcut icon" href="unnamed.png">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2@2.0.0/dist/spectrum.min.css">
+      <link rel="stylesheet" type="text/css" href="styl.css" />
+      
+    </head>
+	<body onload="init()">
+		<div class="kontrol" onload="readStorage()">
+			<div class="panah"></div>
+			<div class="custom-control custom-radio">
+		      <input type="radio" class="custom-control-input" id="customRadio0" name="example1" checked>
+		      <label class="custom-control-label" for="customRadio0">Default</label>
+		    </div>   
+		    <div class="custom-control custom-radio">
+		      <input type="radio" class="custom-control-input" id="customRadio10" name="example1">
+		      <label class="custom-control-label" for="customRadio10">Pilih Warna</label>
+		    </div>   
+		    <div class="custom-control custom-radio">
+		      <input type="radio" class="custom-control-input" id="customRadio3" name="example1">
+		      <label class="custom-control-label" for="customRadio3">Pagi</label>
+		    </div> 
+		    <div class="custom-control custom-radio">
+		      <input type="radio" class="custom-control-input" id="customRadio4" name="example1">
+		      <label class="custom-control-label" for="customRadio4">Siang</label>
+		    </div> 
+		    <div class="custom-control custom-radio">
+		      <input type="radio" class="custom-control-input" id="customRadio5" name="example1">
+		      <label class="custom-control-label" for="customRadio5">Sore</label>
+		    </div> 
+		  
+		    <div class="custom-control custom-radio">
+		      <input type="radio" class="custom-control-input" id="customRadio8" name="example1">
+		      <label class="custom-control-label" for="customRadio8">Malam</label>
+		    </div> 
+		    <input class="btn mt-3" id="color-picker" value='#0079FF' onclick="onClickWarna()" />
+		</div>
+		<div class="bg morning"></div>
+		<div class="bg noon"></div>
+		<div class="bg afternoon"></div>
+		<div class="bg sunset"></div>
+		<div class="bg evening"></div>
+		<div class="bg midnight"></div>
+		<div class="bg red"></div>
+		<div class="bg green"></div>
+		<div class="bg blue"></div>
+		<div class="bg custom"></div>
+		<div class="container">
+			<div class="quotes">
+				<p id="quotation"></p>
+				<p id="source"></p>
+			</div>
+			<ul class="kotak">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div class="bulat">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="jam" id="time">
+				00:00:00
+			</div>
+			<div class="ucapan" id="quote"></div>
+			<div class="note">ngeng</div>
+            <div class="pengembang"> Version 0.0.1 </div>
+            
+         
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2@2.0.0/dist/spectrum.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+
+		
+        
+        <script type="text/javascript" src="uy.js">
+            
+		</script>
+		
+		<script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script>
+		
+	</body>
+</html>
